@@ -12,7 +12,7 @@ function App() {
       </Hello>
       
 
-      <Welcome></Welcome>
+      <Welcome name="user"></Welcome>
     </div>
   );
 }
