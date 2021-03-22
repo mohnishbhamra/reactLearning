@@ -5,7 +5,7 @@ import Hello from './components/FirstComponent';
 function App() {
   return (
     <div className="App">
-      <Hello/>
+      <Hello name="Mohnish" lastName="Bhamra"></Hello>
 
     </div>
   );
