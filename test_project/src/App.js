@@ -7,8 +7,10 @@ import Welcome from './components/MyClassComponent';
 function App() {
   return (
     <div className="App">
-      <Hello name="Mohnish" lastName="Bhamra"></Hello>
+      <Hello name="Mohnish" lastName="Bhamra">
       <p>The pragraph which is automatically the children property</p>
+      </Hello>
+      
 
       <Welcome></Welcome>
     </div>
