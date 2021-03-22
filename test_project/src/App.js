@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Hello name="Mohnish" lastName="Bhamra"></Hello>
-
+      <p>The pragraph which is automatically the children property</p>
     </div>
   );
 }
