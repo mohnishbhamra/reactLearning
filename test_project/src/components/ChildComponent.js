@@ -5,7 +5,7 @@ class ChildComponent extends Component {
         return (
             <div>
                 <h1> child component {this.props.childName}</h1>
-                <button onClick={this.props.parentClickHandler}>clickFromChild</button>
+                <button onClick={()=>this.props.parentClickHandler("parms sent by child")}>clickFromChild</button>
             </div>
         )
     }

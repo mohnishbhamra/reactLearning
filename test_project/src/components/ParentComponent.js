@@ -13,8 +13,8 @@ class ParentComponent extends Component {
         this.greetParent = this.greetParent.bind(this);
     }
 
-    greetParent() {
-        alert(`Hello from parent, message is -> ${this.state.parentName}`);
+    greetParent(paramFromChild) {
+        alert(`Hello from parent, message is -> ${this.state.parentName} , param coming from child in args is ${paramFromChild}`);
     }
 
    
