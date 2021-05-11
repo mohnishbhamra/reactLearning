@@ -7,14 +7,15 @@ class ComponentForState extends Component {
         this.state = {
             msg: "state message 1"
         }
-    
+        //way 2 for binding this
+        this.toggleStateMessage = this.toggleStateMessage.bind(this);
     }
 
     toggleStateMessage() {
         if (this.state.msg == "state message 1") {
             this.setState(
                 {
-                    msg: "state message 2"
+                    msg: "state message way 2"
                 }       
             );
         } else {
@@ -30,7 +31,8 @@ class ComponentForState extends Component {
         return (
             <div>
                 <h1>{this.state.msg}</h1>
-                <button onClick={()=>this.toggleStateMessage()} >click me to toggle the state message</button>
+                {/* <button onClick={()=>this.toggleStateMessage()} >click me to toggle the state message</button> //this is the one way to bind "this", but has perf issues*/}
+                <button onClick={this.toggleStateMessage} >click me to toggle the state message</button>
             </div >
         )
     }

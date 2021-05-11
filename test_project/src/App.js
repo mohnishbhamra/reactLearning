@@ -12,7 +12,7 @@ function App() {
       <p>The pragraph which is automatically the children property</p>
       </Hello>
       
-      <Welcome name="user"></Welcome>
+      <Welcome name="testuser"></Welcome>
 
       <ComponentForState/>
     </div>
